@@ -1,0 +1,18 @@
+<div class="box mt-5  w-100">
+  <div class="my-2 w-25 mt-5">
+
+    <app-userselect title="categories" [categories]="categories" (selectedvalue)="getAllCategoriesBycategory($event)"></app-userselect>
+
+  </div>
+</div>
+    <div class="test">
+    <div class="row">
+     <div style="padding: 5rem;" class="card" class="col-md-4"style="width: 18rem;"  *ngFor="let item of products">
+    <app-oneproduct [item]="item" (itm)="add($event)"></app-oneproduct>
+    </div>
+    </div>
+  </div>
+
+
+
+
